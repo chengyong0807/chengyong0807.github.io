@@ -336,7 +336,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/04/28/一个让人无语的逻辑判断/" class="post-title-link" itemprop="url">小白从一无所有到在github建个人博客</a>
+                <a href="/2019/04/28/一个让人无语的逻辑判断/" class="post-title-link" itemprop="url">一个让人无语的逻辑判断</a>
               
             
           </h1>
@@ -361,7 +361,7 @@
                 
               
 
-              <time title="Erstellt: 2019-04-28 09:39:42 / Geändert am: 09:39:30" itemprop="dateCreated datePublished" datetime="2019-04-28T09:39:42+08:00">2019-04-28</time>
+              <time title="Erstellt: 2019-04-28 09:39:42 / Geändert am: 09:46:43" itemprop="dateCreated datePublished" datetime="2019-04-28T09:39:42+08:00">2019-04-28</time>
             
 
             
@@ -415,48 +415,20 @@
       
         
           
-            <p>public class Demo1 implements Runnable{<br>    private static Integer money = 500;</p>
-<pre><code>public synchronized int Out() {
-    //只有该条件满足,money - out()才能大于0
-    //----------&gt;money - (500 - 400) = 400
-    //该条件只做输出语句的判断,没有实际操作业务,也不赋值
-
-    //如果该条件不满足,则money - out() =
-    //------------&gt;money - money = 0;
-    //判定输出语句一定为else
-    if(money - 400 &gt; 0){
-        money = money - 400;
-    }
-    try {
-        System.out.println(&quot;等待与系统通信中...&quot;);
-        Thread.sleep(3000);
-    } catch (InterruptedException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
-    return money;
-}
-
-@Override
-public void run() {
-    // TODO Auto-generated method stub
-    if((money - Out()) &gt; 0){
-        System.out.println(&quot;取钱成功!余额为:&quot;+money);
-    }else {
-        System.out.println(&quot;余额不足!取钱失败.余额为:&quot;+money);
-    }
-}
-
-public static void main(String[] args) {
-    Demo1 out = new Demo1();
-    Thread t1 = new Thread(out);
-    Thread t2 = new Thread(out);
-    t1.start();
-    t2.start();
-}
-</code></pre><p>}</p>
-
+            <p>
+              今天翻看以前的练习,忽然发现了一个看不懂的逻辑判断.但看结果是对的就引起了我的兴趣.研究了好一会恍然大悟.我以前真是一个小机灵鬼.哈哈(附原来的代码)
+public class Demo1 imple
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/04/28/一个让人无语的逻辑判断/#more" rel="contents">
+                Weiterlesen &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -622,12 +594,20 @@ public static void main(String[] args) {
       
         
           
-            <p>①  Eclipse 编译错误<br>Access restriction:The type *** is not accessible due to restriction on…  解决方案</p>
-<pre><code>解决方法： 
-Project -&gt; Properties -&gt; libraries， 
-先 remove 掉 JRE System Library，然后再 Add Library 重新加入。
-</code></pre>
+            <p>
+              ①  Eclipse 编译错误Access restriction:The type *** is not accessible due to restriction on…  解决方案
+解决方法： 
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/22/Eclipse错误集锦/#more" rel="contents">
+                Weiterlesen &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -781,9 +761,20 @@ Project -&gt; Properties -&gt; libraries，
       
         
           
-            <p>第一次在博客上写文字,也不知道能不能传上去.<br>就先写这么多吧.</p>
+            <p>
+              第一次在博客上写文字,也不知道能不能传上去.就先写这么多吧.
 
+              
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/22/小白从一无所有到在github建个人博客/#more" rel="contents">
+                Weiterlesen &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
